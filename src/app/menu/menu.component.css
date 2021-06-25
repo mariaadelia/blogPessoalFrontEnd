@@ -1,0 +1,18 @@
+@font-face {
+    font-family: SukhumvitBold;
+    src: url(src/assets/Fonte/SukhumvitSet-Bold.ttf);
+}
+
+.ftespecial{
+    font-family: SukhumvitBold;
+}
+.tamanhofnt{
+    font-size: 16pt;
+}
+.links{
+    color: #000000;
+    text-decoration: none;
+}
+.links :hover{
+    color: #777777;
+}
