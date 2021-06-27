@@ -1,0 +1,30 @@
+#img-background{
+    background-image: url(https://i.imgur.com/H0zMrrS.jpg);
+    min-height: 1060px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: SukhumvitBold;
+    src: url(src/assets/Fonte/SukhumvitSet-Bold.ttf);
+}
+
+.fttitulo{
+    font-family: SukhumvitBold;
+}
+
+@font-face {
+    font-family: Sukhumvit;
+    src: url(src/assets/Fonte/SukhumvitSet-Light.ttf);
+}
+
+.ftcorpo{
+    font-family: Sukhumvit;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}

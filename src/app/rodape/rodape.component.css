@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Sukhumvit;
+    src: url(src/assets/Fonte/SukhumvitSet-Light.ttf);
+}
+
+.ftespecial{
+    font-family: Sukhumvit;
+}
+
+.fttamanho{
+    font-size: 5pt;
+}
+
+.bgimg{
+    background-image: url(https://i.imgur.com/phlwIJz.jpg);
+}
+
+ul .social{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social li{
+    display: inline;
+    margin: 0px;
+    padding: 5px;
+}
+
+.fa{ /*fa porque todas as classes com ícones tem o fa na frente*/
+    color: #000000;
+    font-size: 25pt;
+}
+/*para no hover as cores mudarem especificamente*/
+.fa-linkedin-square:hover{
+    color: #0e76a8;
+}
+
+.fa-twitter-square:hover{
+    color: #00acee;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.corhover:hover{
+    color: #777777;
+}
