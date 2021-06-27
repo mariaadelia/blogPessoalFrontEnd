@@ -11,6 +11,10 @@
     font-size: 5pt;
 }
 
+.bgimg{
+    background-image: url(https://i.imgur.com/phlwIJz.jpg);
+}
+
 ul .social{
     list-style: none;
     padding: 0;
@@ -40,5 +44,5 @@ a{
     text-decoration: none;
 }
 a.corhover:hover{
-    color: #6e6e6e;
+    color: #777777;
 }

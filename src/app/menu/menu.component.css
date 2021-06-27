@@ -10,9 +10,12 @@
     font-size: 16pt;
 }
 .links{
-    color: #000000;
     text-decoration: none;
 }
 .links :hover{
     color: #777777;
+}
+
+.bgimg{
+    background-image: url(https://i.imgur.com/phlwIJz.jpg);
 }
