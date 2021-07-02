@@ -30,34 +30,34 @@
 
 </div>
 
-<!--Menu de navegação das postagens (PROBLEMA - toda vez que eu clico, ela sai da pg (no caso de minhas postagens e postagens Tema))-->
+<!--Menu de navegação das postagens (o toggle é data-bs-toggle)-->
 <div class="container mb-5 mt-5" id="postagens">
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center fttxt" id="nav-tab" role="tablist">
 
-            <a class="nav-item nav-link active text-secondary" id="nav-todasPostagens-tab" data-toggle="tab"
-                href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
-                Postagens</a>
+            <button class="nav-item nav-link active text-secondary" id="nav-todasPostagens-tab" data-bs-toggle="tab"
+            data-bs-target="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
+                Postagens</button>
 
-            <a class="nav-item nav-link" id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens"
-                role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
+            <button class="nav-item nav-link" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens"
+                role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</button>
 
-            <a class="nav-item nav-link" id="nav-postagensTema-tab" data-toggle="tab" href="#postagensTema" role="tab"
-                aria-controls="nav-postagensTema" aria-selected="false">Postagens por Temas</a>
+            <button class="nav-link" id="nav-postagensTema-tab" data-bs-toggle="tab" data-bs-target="#postagensTema" role="tab"
+                aria-controls="nav-postagensTema" aria-selected="false" type="button">Postagens por Temas</button>
         </div>
     </nav>
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content fttxt" id="nav-tabContent">
 
-        <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
-            aria-labelledby="nav-todasPostagens-tab">
-            Todas as Postagens
+        <!--O Id tem que ser igual ao aria-controls (PROBLEMA: não troca o texto)-->
+        <div class="tab-pane fade show active" id="nav-todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab"> 
+            Todas as postagens
         </div>
 
-        <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+        <div class="tab-pane fade" id="nav-minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
             Minhas Postagens
         </div>
 
-        <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
+        <div class="tab-pane fade" id="nav-postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
             Postagens por tema
         </div>
     </div>
