@@ -30,19 +30,19 @@
 
 </div>
 
-<!--Menu de navegação das postagens (o toggle é data-bs-toggle)-->
+<!--Menu de navegação das postagens (o toggle é data-bs-toggle) data-bs-target = igual ao Id de lá de baixo (do tabContent)-->
 <div class="container mb-5 mt-5" id="postagens">
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center fttxt" id="nav-tab" role="tablist">
 
             <button class="nav-item nav-link active text-secondary" id="nav-todasPostagens-tab" data-bs-toggle="tab"
-            data-bs-target="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
+            data-bs-target="#nav-todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as
                 Postagens</button>
 
-            <button class="nav-item nav-link" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens"
+            <button class="nav-item nav-link" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#nav-minhasPostagens"
                 role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</button>
 
-            <button class="nav-link" id="nav-postagensTema-tab" data-bs-toggle="tab" data-bs-target="#postagensTema" role="tab"
+            <button class="nav-link" id="nav-postagensTema-tab" data-bs-toggle="tab" data-bs-target="#nav-postagensTema" role="tab"
                 aria-controls="nav-postagensTema" aria-selected="false" type="button">Postagens por Temas</button>
         </div>
     </nav>
