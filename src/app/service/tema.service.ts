@@ -22,8 +22,23 @@ export class TemaService {
     return this.http.get<Tema[]>('https://maria-adelia.herokuapp.com/tema',this.token)
   }
 
+  /*Get By Id*/
+  getByIdTema(id:number): Observable<Tema>{
+    return this.http.get<Tema>(`https://maria-adelia.herokuapp.com/tema/${id}`, this.token)
+  }
+
   /*Post*/
   postTema(tema:Tema):Observable <Tema>{
     return this.http.post<Tema>('https://maria-adelia.herokuapp.com/tema',tema,this.token)
+  }
+
+  /*Editar*/
+  putTema(tema:Tema):Observable<Tema>{
+    return this.http.put<Tema>('https://maria-adelia.herokuapp.com/tema', tema, this.token)
+  }
+  
+  /*Deletar*/
+  deleteTema(id:number){
+    return this.http.delete(`https://maria-adelia.herokuapp.com/tema/${id}`, this.token)
   }
 }

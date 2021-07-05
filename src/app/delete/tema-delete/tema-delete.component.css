@@ -1,0 +1,25 @@
+@font-face {
+    font-family: SukhumvitBold;
+    src: url(src/assets/Fonte/SukhumvitSet-Bold.ttf);
+}
+
+@font-face {
+    font-family: Sukhumvit;
+    src: url(src/assets/Fonte/SukhumvitSet-Light.ttf);
+}
+
+.fttxt{
+    font-family: Sukhumvit;
+}
+
+.ftespecial{
+    font-family: SukhumvitBold;
+}
+
+titulo{
+    font-size: 54pt;
+}
+
+texto{
+    font-size: 18pt;
+}
