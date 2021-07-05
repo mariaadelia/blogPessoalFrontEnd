@@ -1,5 +1,6 @@
 .bg{
-    background-image: url(https://i.imgur.com/dDQkdji.jpg);
+    background-image: url(https://i.imgur.com/phlwIJz.jpg);
+    opacity: 0.8;
 }
 
 .ftsize{
@@ -9,3 +10,4 @@
 .ftsizegeral{
     font-size: 25pt;
 }
+
