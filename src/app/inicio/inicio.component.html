@@ -63,7 +63,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{item.titulo}}</h5>
                     <p class="card-text">{{item.texto}}</p>
-                    <small class="text-muted">Tema:{{item.tema}} </small>
+                    <small class="text-muted">Tema:{{item.tema.tema}} </small>
                 </div>
                 <div class="card-footer text-muted text-start">
                     {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
@@ -80,7 +80,11 @@
                 <div class="card-body">
                     <h5 class="card-title">{{item.titulo}}</h5>
                     <p class="card-text">{{item.texto}}</p>
-                    <small class="text-muted">Tema: {{item.tema}}</small>
+                    <small class="text-muted">Tema: {{item.tema.tema}}</small>
+                    <div class="mt-3">
+                        <button class="btn btn-danger"[routerLink]="['/postagem-delete', item.id]" > Apagar </button>
+                        <button class="btn btn-success ms-4" [routerLink]="['/postagem-edit', item.id]" > Editar </button>
+                    </div>
                 </div>
                 <div class="card-footer text-muted text-start">
                     {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}
@@ -95,10 +99,13 @@
             <!--Card de minhas postagens-->
             <div *ngFor = 'let tema of listaTemas'>
                 <div class="card text-center mt-3" *ngFor='let item of tema.postagem'>
+                    <div class="card-footer text-muted text-start">
+                        @{{item.usuario.usuario}}
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">{{item.titulo}}</h5>
                         <p class="card-text">{{item.texto}}</p>
-                        <small class="text-muted">Tema: {{item.tema}}</small>
+                        <!--<small class="text-muted">Tema: {{item.tema}}</small>-->
                     </div>
                     <div class="card-footer text-muted text-start">
                         {{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}

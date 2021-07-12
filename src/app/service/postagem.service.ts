@@ -24,4 +24,16 @@ export class PostagemService {
   postPostagem(postagem:Postagem) : Observable <Postagem>{
     return this.http.post<Postagem>('https://maria-adelia.herokuapp.com/postagem', postagem, this.token)
   }
+
+  getByIdPostagem(id:number): Observable<Postagem>{
+    return this.http.get<Postagem>(`https://maria-adelia.herokuapp.com/postagem/${id}`, this.token)
+  }
+
+  putPostagem(postagem:Postagem) : Observable<Postagem>{
+    return this.http.put<Postagem>('https://maria-adelia.herokuapp.com/postagem', postagem, this.token)
+  }
+
+  deletePostagem(id:number){
+    return this.http.delete(`https://maria-adelia.herokuapp.com/postagem/${id}`,this.token)
+  }
 }
