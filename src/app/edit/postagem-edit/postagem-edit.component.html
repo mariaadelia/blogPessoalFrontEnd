@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center texr-secondary">Atualizar Postagem</h1>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="titulo" class="col-form-label">Título</label>
+                    <input [(ngModel)]='postagem.titulo' name="titulo" type="text" class="form-control" id="titulo"
+                        placeholder="Digite o título">
+                </div>
+                <div class="mb-3">
+                    <label for="texto" class="col-form-label">Texto</label>
+                    <textarea [(ngModel)]='postagem.texto' name="texto" class="form-control" id="texto"
+                        rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="tema" class="col-form-label">Escolha um tema ou <a data-bs-dismiss="modal"
+                            routerLink='/tema'> cadastre um novo</a>:</label>
+                    <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
+                        <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.tema}}</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success" (click)='atualizar()'
+                data-bs-dismiss="modal">Publicar</button>
+        </div>
+    </div>
+</div>
