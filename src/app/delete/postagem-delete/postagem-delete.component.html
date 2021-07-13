@@ -1,1 +1,35 @@
-<p>postagem-delete works!</p>
+<div class="container mb-5 mt-5">
+    <div class="row mb-2">
+        <div class="col-md-12 ftespecial titulo">
+            <h1 class="text-center">Apagar Postagem</h1>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h4 class="text-center text-secondary fttxt texto">Você tem certeza que deseja apagar essa postagem?</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card text-center mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{postagem.titulo}}</h5>
+                    <p class="card-text">{{postagem.texto}}</p>
+                    <small class="text-muted">Tema: {{postagem.tema.tema}}</small>
+                </div>
+                <div class="card-footer text-muted text-start">
+                    {{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date: 'HH:mm'}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center fttxt">
+            <button class="btn btn-danger" routerLink = '/inicio'> Não </button>
+            <button class="btn btn-success ms-4" (click) = 'apagar()'> Sim </button>
+        </div>
+    </div>
+</div>
